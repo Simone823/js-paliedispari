@@ -28,3 +28,16 @@ while (numbers.length != 1){
     }
     
 }
+
+// Genero un numero random da 1 a 5
+function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+getRandomIntInclusive(1,5);
+
+
+// Numero random da 1 a 5 per il pc 
+const numberPC = getRandomIntInclusive(1, 5);
+console.log(numberPC);
