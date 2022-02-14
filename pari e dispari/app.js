@@ -41,3 +41,16 @@ getRandomIntInclusive(1,5);
 // Numero random da 1 a 5 per il pc 
 const numberPC = getRandomIntInclusive(1, 5);
 console.log(numberPC);
+
+// Aggiungo il numero random all'interno del mio array numbers
+numbers.push(numberPC);
+
+// Sommo i due numeri
+const somma = numbers[0] + numbers[1];
+console.log(somma);
+
+if (somma % 2 === 0){
+    console.log("La somma dei numeri è Pari");
+} else{
+    console.log("La somma dei numeri è Dispari");
+}
