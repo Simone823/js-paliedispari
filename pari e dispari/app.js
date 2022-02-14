@@ -45,14 +45,21 @@ console.log(numberPC);
 // Aggiungo il numero random all'interno del mio array numbers
 numbers.push(numberPC);
 
-// Sommo i due numeri
-const somma = numbers[0] + numbers[1];
-console.log(somma);
 
-if (somma % 2 === 0){
-    console.log("La somma dei numeri è Pari", somma);
-    alert(`La somma dei numeri è Pari ${somma}`);
-} else{
-    console.log("La somma dei numeri è Dispari", somma);
-    alert(`La somma dei numeri è Dispari ${somma}`);
+// Funzione somma numbers[0] + numbers[1]
+function sum (numero1, numero2) {
+    // Sommo i due numeri
+    const somma = numero1 + numero2;
+    console.log(somma);
+
+    // Se la somma dei numeri è pari, alert pari
+    if (somma % 2 === 0){
+        console.log("La somma dei numeri è Pari", somma);
+        alert(`La somma dei numeri è Pari ${somma}`);
+    } // Altrimenti se dispari, alert dispari
+      else{
+        console.log("La somma dei numeri è Dispari", somma);
+        alert(`La somma dei numeri è Dispari ${somma}`);
+    }
 }
+sum(numbers[0], numbers[1]);
