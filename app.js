@@ -35,9 +35,11 @@ function verificoParolaPalindroma (parola) {
     // Se la parola inserita dall'utente è uguale alla parola invertita, la parola è palindroma
     if(userWord == invertedJoin){
         console.log("palindroma");
+        alert("La parola inserita è palindroma")
     } // Altrimenti la parola non è palindroma 
         else {
         console.log("non palindroma")
+        alert("La parola inserita non è palindroma")
     }
 
 }
