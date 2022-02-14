@@ -50,7 +50,9 @@ const somma = numbers[0] + numbers[1];
 console.log(somma);
 
 if (somma % 2 === 0){
-    console.log("La somma dei numeri è Pari");
+    console.log("La somma dei numeri è Pari", somma);
+    alert(`La somma dei numeri è Pari ${somma}`);
 } else{
-    console.log("La somma dei numeri è Dispari");
+    console.log("La somma dei numeri è Dispari", somma);
+    alert(`La somma dei numeri è Dispari ${somma}`);
 }
